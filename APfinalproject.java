@@ -55,54 +55,87 @@ public class APfinalproject {
         System.out.println("1. What conference is your team in?");
         String startAnswer = answer.next();
         if(startAnswer.equals("east")){
-            nbaTeams.remove("Mavs");
-            nbaTeams.remove("Nuggets");
-            nbaTeams.remove("Warriors");
-            nbaTeams.remove("Rockets");
-            nbaTeams.remove("Clippers");
-            nbaTeams.remove("Lakers");
-            nbaTeams.remove("Grizzlies");
-            nbaTeams.remove("Wolves");
-            nbaTeams.remove("Pelicans");
-            nbaTeams.remove("Thunder");
-            nbaTeams.remove("Suns");
-            nbaTeams.remove("Blazers");
-            nbaTeams.remove("Kings");
-            nbaTeams.remove("Spurs");
-            nbaTeams.remove("Jazz");
             System.out.println("2. Has your team won a championship?");
-            String q2Answer = answer.next();
-            if(q2Answer.equals("yes")){
-                nbaTeams.remove("Nets");
-                nbaTeams.remove("Magic");
-                nbaTeams.remove("Pacers");
-                nbaTeams.remove("Hornets");
+            String eastq2Answer = answer.next();
+            if(eastq2Answer.equals("yes")){
                 System.out.println("3. Does your team have red in its logo?");
-                String q3Answer = answer.next();
-                if(q3Answer.equals("yes")){
-                    nbaTeams.remove("Knicks");
-                    nbaTeams.remove("Celtics");
-                    nbaTeams.remove("Bucks");
+                String eastq3Answer = answer.next();
+                if(eastq3Answer.equals("yes")){
                     System.out.println("4. Does your team have an animal mascot");
-                    String q4answer = answer.next();
-                    if(q4answer.equals("yes")){
-                        nbaTeams.remove("Hawks");
-                        nbaTeams.remove("Cavs");
-                        nbaTeams.remove("Bulls");
-                        nbaTeams.remove("Raptors");
-                        System.out.println("5. Is your team in Florida?");
-                        String q5answer = answer.next();
-                        if(q5answer.equals("yes")){
-                            System.out.println("Was your team the Miami Heat?");
+                    String eastq4answer = answer.next();
+                    if(eastq4answer.equals("yes")){
+                        System.out.println("5. Is your team in Canada?");
+                        String eastq5answer = answer.next();
+                        if(eastq5answer.equals("yes")){
+                            System.out.println("Was your team the Toronto Raptors?");
                             String GuessMiami = answer.next();
+                            if(GuessMiami.equals("yes")){
+                                System.out.println("I guessed your team!");
+                            }
                         }
 
+                    }
+                }
+            }
+            if(eastq2Answer.equals("no")){
+                System.out.println("4. Is your team in a landlocked state (Not D.C) ?");
+                String landlocked = answer.next();
+                if(landlocked.equals("yes")){
+                    System.out.println("Is your team the Indianaplois Pacers");
+                    String GuessPacers = answer.next();
+                    if(GuessPacers.equals("yes")){
+                        System.out.print("I guessed your team!");
+                    }
+                }
+                if(landlocked.equals("no")){
+                    System.out.println("Is your team the Washinton Wizards?");
+                    String GuessWizards = answer.next();
+                    if(GuessWizards.equals("yes")){
+                        System.out.println("I guessed your team!");
+                    }
+                    if(GuessWizards.equals("no")){
+                        System.out.println("5. Is blue in your teams colors?");
+                        String blue = answer.next();
+                        if(blue.equals("no")){
+                            System.out.println("Is your team the Brooklyn Nets");
+                            String GuessNets = answer.next();
+                            if(GuessNets.equals("yes")){
+                                System.out.println("I guessed your team!");
+                            }
+                        }
+                        if(blue.equals("yes")){
+                            System.out.println("Is your team in Florida");
+                            String florida = answer.next();
+                            if(florida.equals("yes")){
+                                System.out.println("Is your team the Orlando Magic?");
+                                String GuessMagic = answer.next();
+                                if(GuessMagic.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
         if(startAnswer.equals("west")){
             System.out.println("2. Has your team won a championship");
+            String westq2Answer = answer.next();
+            if(westq2Answer.equals("yes")){
+                System.out.println("3. Does your team have blue in its logo?");
+                String westq3Answer = answer.next();
+                if(westq3Answer.equals("yes")){
+                    System.out.println("4. Is your team in San Francisco ");
+                    String westq4Answer = answer.next();
+                    if(westq4Answer.equals("yes")){
+                        System.out.println("Is your team the Golden State Warriors?");
+                        String GuessWarriors = answer.next();
+                        if(GuessWarriors.equals("yes")){
+                            System.out.println("I guessed your team!");
+                        }
+                    }
+                }
+            }
         }
 
 
