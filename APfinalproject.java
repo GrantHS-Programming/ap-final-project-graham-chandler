@@ -76,9 +76,38 @@ public class APfinalproject {
 
                     }
                 }
+                if(eastq3Answer.equals("no")){
+                    System.out.println("4. Is your teams mascot an animal?");
+                    String animal = answer.next();
+                    if(animal.equals("yes")){
+                        System.out.println("Is your team the Milwaukee Bucks?");
+                        String GuessBucks = answer.next();
+                        if(GuessBucks.equals("yes")){
+                            System.out.println("I guessed your team!");
+                        }
+                    }
+                    if(animal.equals("no")){
+                        System.out.println(" 5. Did Bill Russel play on your team?");
+                        String russel = answer.next();
+                        if(russel.equals("yes")){
+                            System.out.println("Is your team the Boston Celtics");
+                            String GuessCeltics = answer.next();
+                            if(GuessCeltics.equals("yes")){
+                                System.out.println("I guessed your team!");
+                            }
+                        }
+                        if(russel.equals("no")){
+                            System.out.println("Is your team the New York Knicks?");
+                            String GuessKnicks = answer.next();
+                            if(GuessKnicks.equals("yes")){
+                                System.out.println("I guessed your team!");
+                            }
+                        }
+                    }
+                }
             }
             if(eastq2Answer.equals("no")){
-                System.out.println("4. Is your team in a landlocked state (Not D.C) ?");
+                System.out.println("3. Is your team in a landlocked state (Not D.C) ?");
                 String landlocked = answer.next();
                 if(landlocked.equals("yes")){
                     System.out.println("Is your team the Indianaplois Pacers");
@@ -94,7 +123,7 @@ public class APfinalproject {
                         System.out.println("I guessed your team!");
                     }
                     if(GuessWizards.equals("no")){
-                        System.out.println("5. Is blue in your teams colors?");
+                        System.out.println("4. Is blue in your teams colors?");
                         String blue = answer.next();
                         if(blue.equals("no")){
                             System.out.println("Is your team the Brooklyn Nets");
@@ -104,12 +133,19 @@ public class APfinalproject {
                             }
                         }
                         if(blue.equals("yes")){
-                            System.out.println("Is your team in Florida");
+                            System.out.println("5. Is your team in Florida");
                             String florida = answer.next();
                             if(florida.equals("yes")){
                                 System.out.println("Is your team the Orlando Magic?");
                                 String GuessMagic = answer.next();
                                 if(GuessMagic.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                            if(florida.equals("no")){
+                                System.out.println("Is your team the Charlotte Hornets?");
+                                String GuessHornets = answer.next();
+                                if(GuessHornets.equals("yes")){
                                     System.out.println("I guessed your team!");
                                 }
                             }
