@@ -61,7 +61,7 @@ public class APfinalproject {
                 System.out.println("3. Does your team have red in its logo?");
                 String eastq3Answer = answer.next();
                 if(eastq3Answer.equals("yes")){
-                    System.out.println("4. Does your team have an animal mascot");
+                    System.out.println("4. Does your team have an animal mascot?");
                     String eastq4answer = answer.next();
                     if(eastq4answer.equals("yes")){
                         System.out.println("5. Is your team in Canada?");
@@ -73,7 +73,65 @@ public class APfinalproject {
                                 System.out.println("I guessed your team!");
                             }
                         }
+                        if(eastq5answer.equals("no")){
+                            System.out.println("6. Did Micheal Jordan play for your team?");
+                            String Jordan = answer.next();
+                            if(Jordan.equals("yes")){
+                                System.out.println("Is your team the Chicago Bulls?");
+                                String GuessBulls = answer.next();
+                                if(GuessBulls.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                            if(Jordan.equals("no")){
+                                System.out.println("Is your team the Atlanta Hawks?");
+                                String GuessHawks =answer.next();
+                                if(GuessHawks.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                        }
 
+                    }
+                    if(eastq4answer.equals("no")){
+                        System.out.println("5. Has Lebron James played for your team?");
+                        String Lebron = answer.next();
+                        if(Lebron.equals("yes")){
+                            System.out.println("6. Is your team in Florida?");
+                            String Miami = answer.next();
+                            if(Miami.equals("yes")){
+                                System.out.println("Is your team the Miami Heat?");
+                                String GuessMiami = answer.next();
+                                if(GuessMiami.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                            if(Miami.equals("no")){
+                                System.out.println("Is your team the Cleveland Cavaliers?");
+                                String GuessCavs = answer.next();
+                                if(GuessCavs.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                        }
+                        if(Lebron.equals("no")){
+                            System.out.println("6. Was your team direct rivals with the Bulls in the 90's?");
+                            String rivals = answer.next();
+                            if(rivals.equals("yes")){
+                                System.out.println("Is your team the Detroit Pistons?");
+                                String GuessPistons = answer.next();
+                                if(GuessPistons.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                            if(rivals.equals("no")){
+                                System.out.println("Is your team the Philadelphia 76'ers");
+                                String GuessPhilly = answer.next();
+                                if(GuessPhilly.equals("yes")){
+                                    System.out.println("I guessed your team!");
+                                }
+                            }
+                        }
                     }
                 }
                 if(eastq3Answer.equals("no")){
@@ -170,6 +228,42 @@ public class APfinalproject {
                             System.out.println("I guessed your team!");
                         }
                     }
+                }
+            }
+            if(westq2Answer.equals("no")){
+                System.out.println("3. Is your team based west of the Mississippi River?");
+                String river = answer.next();
+                if(river.equals("yes")){
+                    System.out.println("4. Is your team in California?");
+                    String Cali = answer.next();
+                    if(Cali.equals("yes")){
+                        System.out.println("Is your team the Clippers?");
+                        String GuessClippers = answer.next();
+                        if(GuessClippers.equals("yes")){
+                            System.out.println("I guessed your team!");
+                        }
+                    }
+                    if(Cali.equals("no")){
+                        System.out.println("5. Does Kevin Durant play on your team? ");
+                        String KD = answer.next();
+                        if(KD.equals("yes")){
+                            System.out.println("Is your team the Phoenix Suns");
+                            String GuessSuns = answer.next();
+                            if(GuessSuns.equals("yes")){
+                                System.out.println("I guessed your team!");
+                            }
+                        }
+                        if(KD.equals("no")){
+                            System.out.println("Is your team the Minnesota Timberwolves?");
+                            String GuessWolves = answer.next();
+                            if(GuessWolves.equals("yes")){
+                                System.out.println("I guessed your team!");
+                            }
+                        }
+                    }
+                }
+                if(river.equals("no")){
+
                 }
             }
         }
