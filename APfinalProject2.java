@@ -41,6 +41,44 @@ public class APfinalProject2 {
                         if (deadly.equals("yes")) {
                             System.out.println("I think Compton is the perfect place for your to raise your family!");
                         }
+                        if(deadly.equals("no")){
+                            System.out.println("Your ideal city is Houston, Texas!");
+                        }
+                    }
+                    if(rentCompton.equals("no")){
+                        System.out.println("5. Do you want to live in the deep south?");
+                        String deep = answer.next();
+                        if(deep.equals("yes")){
+                            System.out.println("I think you should live in Birmingham, Alabama!");
+                        }
+                        if(deep.equals("no")){
+                            System.out.println("Washington D.C is a great place for you!");
+                        }
+
+                    }
+                }
+                if(CrimeRate.equals("lower")){
+                    System.out.println("4. Does being in a more humid climate appeal to you?");
+                    String humid = answer.next();
+                    if(humid.equals("yes")){
+                        System.out.println("5. Do you want to have access to sports teams?");
+                        String BigCity = answer.next();
+                        if(BigCity.equals("yes")){
+                            System.out.println("I think Orlando, Florida would be a suitbale place to live!");
+                        }
+                        if(BigCity.equals("no")){
+                            System.out.println("Your City of choice is Charleston, South Carolina!");
+                        }
+                    }
+                    if(humid.equals("no")){
+                        System.out.println("5. Do you want close access to gambling?");
+                        String gambling = answer.next();
+                        if(gambling.equals("yes")){
+                            System.out.println("I think you should live in Oceanside, California!");
+                        }
+                        if(gambling.equals("no")){
+                            System.out.println("Santa Cruz, California is the place for you!");
+                        }
                     }
                 }
             }
