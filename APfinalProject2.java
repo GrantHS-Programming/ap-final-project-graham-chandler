@@ -9,7 +9,7 @@ public class APfinalProject2 {
     }
 
     public static void startGame() {
-        System.out.println("In this game you will answer my questions and I will tell you where you should live in the United States!");
+        System.out.println("In this game you will answer my questions and I will tell you where you should live in the World!");
         System.out.println(" ");
         System.out.println("Should we play?");
         answer.useDelimiter("\\n");
@@ -20,13 +20,13 @@ public class APfinalProject2 {
     }
 
     public static void playGame() {
-        System.out.println("1. Do you prefer living by the mountains or the beach?");
+        System.out.println("1. Do you prefer in the United States?");
         String mountiansBeach = answer.next();
-        if (mountiansBeach.equals("Mountains")) {
+        if (mountiansBeach.equals("no")) {
             System.out.println("2. Do you want to live near or around a big city?");
 
         }
-        if (mountiansBeach.equals("beach")) {
+        if (mountiansBeach.equals("yes")) {
             System.out.println("2. Do you prefer a warmer or colder climate?");
             String WarmCold = answer.next();
             if (WarmCold.equals("warmer")) {
@@ -78,6 +78,34 @@ public class APfinalProject2 {
                         }
                         if(gambling.equals("no")){
                             System.out.println("Santa Cruz, California is the place for you!");
+                        }
+                    }
+                }
+            }
+            if (WarmCold.equals("colder")){
+                System.out.println("3. Do you want to have access to good skiing?");
+                String Ski = answer.next();
+                if(Ski.equals("yes")){
+                    System.out.println("4. Do you want to live near water?");
+                    String water = answer.next();
+                    if(water.equals("yes")){
+                        System.out.println("5. Do you like having access to pro sports teams?");
+                        String blazer = answer.next();
+                        if(blazer.equals("yes")){
+                            System.out.println("I think Portland, Oregon is a perfect place for you!");
+                        }
+                        if(blazer.equals("no")){
+                            System.out.println("I think that Hood River, Oregon is a great place for you!");
+                        }
+                    }
+                    if(water.equals("no")){
+                        System.out.println("5. Does your ideal location have sports teams?");
+                        String pro = answer.next();
+                        if(pro.equals("yes")){
+                            System.out.println("You should live in Denver, Colorado!");
+                        }
+                        if(pro.equals("no")){
+                            System.out.println("You should live in Vail, Colorado!");
                         }
                     }
                 }
