@@ -109,6 +109,30 @@ public class APfinalProject2 {
                         }
                     }
                 }
+                if(Ski.equals("no")){
+                    System.out.println("4. Do you want to live near the coast?");
+                    String coast = answer.next();
+                    if(coast.equals("yes")){
+                        System.out.println("5. Do you like pro sports?");
+                        String BA = answer.next();
+                        if(BA.equals("yes")){
+                            System.out.println("Boston, Massachusetts is where you should live!");
+                        }
+                        if(BA.equals("no")){
+                            System.out.println("You should live in Portsmouth, New Hampshire");
+                        }
+                    }
+                    if(coast.equals("no")){
+                        System.out.println("5. Do you like Mt. Rushmore");
+                        String Rush = answer.next();
+                        if(Rush.equals("yes")){
+                            System.out.println("Onida, South Dakota is the place for you!");
+                        }
+                        if(Rush.equals("no")){
+                            System.out.println("Whitetail, Montana is where you should live!");
+                        }
+                    }
+                }
             }
         }
     }
