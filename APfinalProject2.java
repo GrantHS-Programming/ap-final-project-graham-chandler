@@ -24,6 +24,54 @@ public class APfinalProject2 {
         String mountiansBeach = answer.next();
         if (mountiansBeach.equals("no")) {
             System.out.println("2. Do you want to live near or around a big city?");
+            String bi = answer.next();
+            if(bi.equals("yes")){
+                System.out.println("3. Does living in Europe sound interesting?");
+                String Europe = answer.next();
+                if(Europe.equals("yes")){
+                    System.out.println("4. Do you like soccer?");
+                    String soccer = answer.next();
+                    if(soccer.equals("yes")) {
+                        System.out.println("5. Is English your first language?");
+                        String en = answer.next();
+                        if(en.equals("yes")){
+                            System.out.println("You should live in Manchester, England");
+                        }
+                        if(en.equals("no")){
+                            System.out.println("You should live in Paris, France");
+                        }
+                    }
+                    if(soccer.equals("no")){
+                        System.out.println("Europe is not the place for you, there are no big cities that don't have soccer teams.");
+
+                    }
+                }
+                if(Europe.equals("no")){
+                    System.out.println("4. Does living in Asia sound better to you?");
+                    String as = answer.next();
+                    if(as.equals("yes")){
+                        System.out.println("5. Do you like the beach?");
+                        String b = answer.next();
+                        if(b.equals("yes")){
+                            System.out.println("you should live in Bangkok, Thailand!");
+                        }
+                        if(b.equals("no")){
+                            System.out.println("You should live in Ulaanbaatar, Mongolia ");
+                        }
+
+                    }
+                    if(as.equals("no")){
+                        System.out.println("5. Do you like the Safari?");
+                        String lion = answer.next();
+                        if(lion.equals("yes")){
+                            System.out.println("You should live in Cape Town, South Africa!");
+                        }
+                        if(lion.equals("no")){
+                            System.out.println("You would like Cairo, Egypt.");
+                        }
+                    }
+                }
+            }
 
         }
         if (mountiansBeach.equals("yes")) {
