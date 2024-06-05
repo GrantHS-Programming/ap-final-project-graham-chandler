@@ -1,3 +1,5 @@
+import com.apple.eawt.AppEvent;
+
 import java.util.Scanner;
 
 public class APfinalProject2 {
@@ -68,6 +70,58 @@ public class APfinalProject2 {
                         }
                         if(lion.equals("no")){
                             System.out.println("You would like Cairo, Egypt.");
+                        }
+                    }
+                }
+            }
+            if(bi.equals("no")){
+                System.out.println("3. Do you prefer the beach or the mountains?");
+                String chug = answer.next();
+                if(chug.equals("beach")){
+                    System.out.println("4. How about cold or warm climate?");
+                    String cold = answer.next();
+                    if(cold.equals("cold")){
+                        System.out.println("5. Do you like free market business endeavours?");
+                        String freeMarket = answer.next();
+                        if(freeMarket.equals("yes")){
+                            System.out.println("I think Mandal, Norway would be a great place to live!");
+                        }
+                        if(freeMarket.equals("no")){
+                            System.out.println("You should live in Teriberka, Russia!");
+                        }
+                    }
+                    if(cold.equals("warm")){
+                        System.out.println("5. Do you like to be near crime?");
+                        String dang = answer.next();
+                        if(dang.equals("yes")){
+                            System.out.println("You should live in Mulatos, Colombia");
+                        }
+                        if (dang.equals("no")){
+                            System.out.println("You should live in Tarifa, Spain");
+                        }
+                    }
+                }
+                if(chug.equals("mountains")){
+                    System.out.println("4. Do you like cheese, chocolate, and watches?");
+                    String cheese = answer.next();
+                    if(cheese.equals("yes")){
+                        System.out.println("5. Do you want to live near a ski resort?");
+                        String skiiiii = answer.next();
+                        if(skiiiii.equals("yes")){
+                            System.out.println("You should reside in Grindewald, Switzerland!");
+                        }
+                        if(skiiiii.equals("no")){
+                            System.out.println("You should live in Lausanne, Switzerland!");
+                        }
+                    }
+                    if(cheese.equals("no")){
+                        System.out.println("5. Do you like a previously war torn country, with the posisbilty of stepping on a undetected active landmine!");
+                        String mine = answer.next();
+                        if(mine.equals("no")){
+                            System.out.println("Annacy, France is right for you!");
+                        }
+                        if(mine.equals("yes")){
+                            System.out.println("Karlovac, Croatia, is the place for you!");
                         }
                     }
                 }
